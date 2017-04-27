@@ -1,3 +1,4 @@
+import random
 class config():
     # env config
     render_train     = False
@@ -11,7 +12,7 @@ class config():
     output_path  = "results/q4_train_atari_linear/"
     model_output = output_path + "model.weights/"
     log_path     = output_path + "log.txt"
-    plot_output  = output_path + "scores.png"
+    plot_output  = output_path + "scores-" + str(random.randint(0, 100)) + ".png"
     record_path  = output_path + "monitor/"
 
     # model and training config
